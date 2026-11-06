@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>BrowserSolver</AssemblyName>
+    <RootNamespace>BrowserSolver</RootNamespace>
+    <PackageId>BrowserSolver</PackageId>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Title>BrowserSolver .NET SDK</Title>
+    <Authors>BrowserSolver</Authors>
+    <Company>BrowserSolver</Company>
+    <Copyright>Copyright (c) 2026 BrowserSolver</Copyright>
+    <Description>Official .NET SDK for the BrowserSolver web unlocker API.</Description>
+    <PackageTags>web-unlocker;web-scraping;headless-browser;antibot;api;sdk;browsersolver</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://www.browsersolver.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/browsersolver/browsersolver-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Link="LICENSE" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="BrowserSolver.Tests" />
+  </ItemGroup>
+</Project>
